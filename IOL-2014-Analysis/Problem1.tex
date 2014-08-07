@@ -1,0 +1,279 @@
+\newcommand \rsword [1]{\textit{\word{#1}}}
+
+\section{第一题}
+
+\begin{tabular}{|l|l|} \hline
+\rsword{nohobe} & 我在打他 \\ \hline
+\rsword{kahalune} & 我们将打你 \\ \hline
+\rsword{nokoho’ibe} & 我俩在打你 \\ \hline
+\rsword{nolenufu’inagihe} & 因为我俩在刺你们 \\ \hline
+\rsword{nolifi’ibe} & 你俩在刺我们 \\ \hline
+\rsword{nofunagihe} & 因为我在刺他 \\ \hline
+\rsword{nofine} & 你在刺他 \\ \hline
+\rsword{nifila’ibe} & 你俩将刺我 \\ \hline
+\rsword{nonahatagihe} & 因为你在打我 \\ \hline
+\rsword{lenahalube} & 我将打你们 \\ \hline
+\rsword{nahalanagihe} & 因为你们将打我 \\ \hline
+\rsword{lahala’ibe} & 你俩将打我们 \\ \hline
+\rsword{nofutagihe} & 因为我们在刺他 \\ \hline
+\rsword{lenifilu’ibe} & 我俩将刺你们 \\ \hline
+\rsword{noho’inagihe} & 因为我俩在打他 \\ \hline
+\end{tabular}
+
+这些是贝纳贝纳语的一些动词形式及其汉语翻译。贝纳贝纳语属于跨新几内亚语系，还剩四万五千人在用。
+
+这道题的作者是戴谊凡先生。这是一道很温和的题目，平均得分也很高，但刚开始做它的时候，
+我卡了很久也毫无进展。下面我将重现我的推理过程。
+
+\subsection{推理过程}
+
+简单的观察就可以发现：
+
+\begin{tabular}{|l|l|} \hline
+\rsword{nohobe} & 我在打他 \\ \hline
+\rsword{kahalune} & 我们将打你 \\ \hline
+\rsword{nokoho’ibe} & 我俩在打你 \\ \hline
+\rsword{nolifi’ibe} & 你俩在刺我们 \\ \hline
+\rsword{nofine} & 你在刺他 \\ \hline
+\rsword{nifila’ibe} & 你俩将刺我 \\ \hline
+\rsword{lenahalube} & 我将打你们 \\ \hline
+\rsword{lahala’ibe} & 你俩将打我们 \\ \hline
+\rsword{lenifilu’ibe} & 我俩将刺你们 \\ \hline
+\end{tabular}
+\quad
+\begin{tabular}{|l|l|} \hline
+\rsword{nolenufu’in\highlight{agihe}} & \highlight{因为}我俩在刺你们 \\ \hline
+\rsword{nofun\highlight{agihe}} & \highlight{因为}我在刺他 \\ \hline
+\rsword{nonahat\highlight{agihe}} & \highlight{因为}你在打我 \\ \hline
+\rsword{nahalan\highlight{agihe}} & \highlight{因为}你们将打我 \\ \hline
+\rsword{nofut\highlight{agihe}} & \highlight{因为}我们在刺他 \\ \hline
+\rsword{noho’in\highlight{agihe}} & \highlight{因为}我俩在打他 \\ \hline
+\end{tabular}
+
+“\rsword{-agihe}” 代表着\sq{因为}。
+
+接着，我根据主语来进行分类：
+
+\begin{tabular}[t]{l|l}
+\hline
+\multicolumn{2}{l}{我} \\ 
+\hline
+\rsword{nohobe} & 在打他 \\
+\rsword{nofunagihe} & 在刺他 \\
+\rsword{lenahalube} & 将打你们 \\
+\\
+\hline
+\hline
+\multicolumn{2}{l}{你} \\ 
+\hline
+\rsword{nofine} & 在刺他 \\
+\rsword{nonahatagihe} & 在打我 \\
+\\
+\hline
+\end{tabular}
+\begin{tabular}[t]{l|l}
+\hline
+\multicolumn{2}{l}{我俩} \\ 
+\hline
+\rsword{nokoho\highlight{’i}be} & 在打你 \\
+\rsword{nolenufu\highlight{’i}nagihe} & 在刺你们 \\
+\rsword{lenifilu\highlight{’i}be} & 将刺你们 \\
+\rsword{noho\highlight{’i}nagihe} & 在打他 \\
+\hline
+\hline
+\multicolumn{2}{l}{你俩} \\ 
+\hline
+\rsword{nolifi\highlight{’i}be} & 在刺我们 \\
+\rsword{nifila\highlight{’i}be} & 将刺我 \\
+\rsword{lahala\highlight{’i}be} & 将打我们 \\
+\hline
+\end{tabular}
+\begin{tabular}[t]{l|l}
+\hline
+\multicolumn{2}{l}{我们} \\ 
+\hline
+\rsword{kahalune} & 将打你 \\
+\rsword{nofutagihe} & 在刺他 \\
+\\
+\\
+\hline
+\hline
+\multicolumn{2}{l}{你们} \\ 
+\hline
+\rsword{nahalanagihe} & 将打我 \\
+\\
+\\
+\hline
+\end{tabular}
+
+“\rsword{-’i}” 代表两个人。
+
+除此之外，在比赛的时候，我没能从一张类似的表格里找出其它任何规律，
+包括为什么是\sq{我俩}而不是\sq{你俩}。看这张表格的读者可能会感觉规律足够明显了，但这跟表格的结构有关，
+我会在后面继续讨论这个问题。在此之前，让我们先找出表示\sq{打}和\sq{刺}，以及现在时和将来时的词缀。
+
+\begin{tabular}[t]{l|l}
+\hline
+\multicolumn{2}{l}{在打} \\
+\hline
+\rsword{\hlb{no}\hla{ho}be} & 我在打他 \\
+\rsword{\hlb{no}ko\hla{ho}’ibe} & 我俩在打你 \\
+\rsword{\hlb{no}na\hla{ha}tagihe} & 因为你在打我 \\
+\rsword{\hlb{no}\hla{ho}’inagihe} & 因为我俩在打他 \\
+\\
+\hline
+\hline
+\multicolumn{2}{l}{将打} \\
+\hline
+\rsword{ka\hla{ha}\hlb{lu}ne} & 我们将打你 \\
+\rsword{lena\hla{ha}\hlb{lu}be} & 我将打你们 \\
+\rsword{na\hla{ha}\hlb{la}nagihe} & 因为你们将打我 \\
+\rsword{la\hla{ha}\hlb{la}’ibe} & 你俩将打我们 \\
+\hline
+\end{tabular}
+\quad
+\begin{tabular}[t]{l|l}
+\hline
+\multicolumn{2}{l}{在刺} \\
+\hline
+\rsword{\hlb{no}lenu\hla{fu}’inagihe} & 因为我俩在刺你们 \\
+\rsword{\hlb{no}li\hla{fi}’ibe} & 你俩在刺我们 \\
+\rsword{\hlb{no}\hla{fu}nagihe} & 因为我在刺他 \\
+\rsword{\hlb{no}\hla{fi}ne} & 你在刺他 \\
+\rsword{\hlb{no}\hla{fu}tagihe} & 因为我们在刺他 \\
+\hline
+\hline
+\multicolumn{2}{l}{将刺} \\
+\hline
+\rsword{ni\hla{fi}\hlb{la}’ibe} & 你俩将刺我 \\
+\rsword{leni\hla{fi}\hlb{lu}’ibe} & 我俩将刺你们 \\
+\\
+\\
+\hline
+\end{tabular}
+
+“\rsword{no-}” 和 “\rsword{-lV-}” 分别表示现在时与将来时；
+
+“\rsword{-hV-}” 和 “\rsword{-lV-}” 分别表示\sq{打}与\sq{刺}。
+
+接着我就卡住了，我把上面提到的主语表又反复抄了两遍，也按照宾语进行了排序，
+但都没有取得有意义的进展。直到有一霎那，我突然想到一个问题，既然两个动词分别只有两种形式，
+“\rsword{-ho-}”、“\rsword{-ha-}”、“\rsword{-fi-}” 和 “\rsword{-fu-}”，
+我能不能依次排序进行分析呢？
+
+\begin{tabular}[t]{l|l}
+\hline
+\multicolumn{2}{l}{\rsword{-ho-}} \\
+\hline
+\rsword{\hlb{no}\hla{ho}be} & 我在打他 \\
+\rsword{\hlb{no}ko\hla{ho}’ibe} & 我俩在打你 \\
+\rsword{\hlb{no}\hla{ho}’inagihe} & 我俩在打他 \\
+\\
+\\
+\hline
+\hline
+\multicolumn{2}{l}{\rsword{-fu-}} \\
+\hline
+\rsword{\hlb{no}lenu\hla{fu}’inagihe} & 我俩在刺你们 \\
+\rsword{\hlb{no}\hla{fu}nagihe} & 我在刺他 \\
+\rsword{\hlb{no}\hla{fu}tagihe} & 我们在刺他 \\
+\\
+\hline
+\end{tabular}
+\begin{tabular}[t]{l|l}
+\hline
+\multicolumn{2}{l}{\rsword{-ha-}} \\
+\hline
+\rsword{ka\hla{ha}\hlb{lu}ne} & 我们将打你 \\
+\rsword{lena\hla{ha}\hlb{lu}be} & 我将打你们 \\
+\rsword{\hlb{no}na\hla{ha}tagihe} & 你在打我 \\
+\rsword{na\hla{ha}\hlb{la}nagihe} & 你们将打我 \\
+\rsword{la\hla{ha}\hlb{la}’ibe} & 你俩将打我们 \\
+\hline
+\hline
+\multicolumn{2}{l}{\rsword{-fi-}} \\
+\hline
+\rsword{leni\hla{fi}\hlb{lu}’ibe} & 我俩将刺你们 \\
+\rsword{\hlb{no}li\hla{fi}’ibe} & 你俩在刺我们 \\
+\rsword{\hlb{no}\hla{fi}ne} & 你在刺他 \\
+\rsword{ni\hla{fi}\hlb{la}’ibe} & 你俩将刺我 \\
+\hline
+\end{tabular}
+
+从表中可以轻松的看出，“\rsword{-ho-}” 和 “\rsword{-fu-}” 为一对，
+“\rsword{-ha-}” 和 “\rsword{-fi-}” 为另一对。前者用于主语为第一人称、
+时态为现在时的情况下，后者适于其它所有情况。
+
+由于我把句子按照人称排序，读者们也可以发现，“\rsword{la}” 用于第一人称，
+而 “\rsword{lu}” 用于第二人称。剩下的任务就很简单了，此处不再浪费篇幅讨论。
+
+\subsection{经验教训}
+
+这道题的平均得分极高，据我了解两支队伍也没有人卡在这里。但还是有其他一些人，
+包括两三位像我这样的学习人员，都卡在这里。
+
+\emph{问题出在对错误的变量展开研究。}
+
+我将句子根据主语进行了分类，总共有六种可能性。我将句子根据动词的变化形式进行分类，
+总共只有两种可能性。数据密度增加了三倍。对于罗赛塔石碑题来说，数据密度越大，
+题目难度也就越低\cite{RosettaAnalysis}。别的类型的题目也有类似的规律，比如说第二题。
+
+前面提到，读者是有可能从我的按主语分类的句子中找出规律的。但是，我最初画的表格类似这样：
+
+\begin{tabular}{|l|l|} \hline
+主语类型 & 动词形式 \\ \hline
+\multirow{3}{*}{我} &
+\rsword{nohobe} \\
+& \rsword{nofunagihe} \\
+& \rsword{lenahalube} \\
+\hline
+\multirow{2}{*}{我们} &
+ \rsword{kahalune} \\
+& \rsword{nofutagihe} \\
+\hline
+\multirow{4}{*}{我俩} &
+\rsword{nokoho’ibe} \\
+& \rsword{nolenufu’inagihe} \\
+& \rsword{lenifilu’ibe} \\
+& \rsword{noho’inagihe} \\
+\hline
+\multirow{3}{*}{你俩} &
+\rsword{nolifi’ibe} \\
+& \rsword{nifila’ibe} \\
+& \rsword{lahala’ibe} \\
+\hline
+\multirow{2}{*}{你} &
+\rsword{nofine} \\
+& \rsword{nonahatagihe} \\
+\hline
+\multirow{1}{*}{你们} &
+\rsword{nahalanagihe} \\
+\hline
+\end{tabular}
+
+对于主语类型，我是按照第一个该类型的句子在文本中出现的位置排序的。对于每个类型下的句子，
+也是按照其在原数据集内相对顺序进行排序的。这是一种很自然的处理方法——从上往下抄数据，
+但对解题无益。
+
+与之相对应的，则是对比动词不同形式的那张表。在比赛过程中，我画的表格比这个要糟糕一些，
+比如没有根据人称和时态进行排序，导致除了动词变化形式外的其它规律并没有那么明显。
+可见，表的形式结构，对规律的发现有很大影响——我们的大脑处理较大数据的能力还不够强。
+
+总结一下：
+
+一、优先分析变化较少的变量。
+
+二、尽可能的对数据进行有意义的排序，方便在一张表格内进行多次分析。
+
+三、将已经发现的词缀用别的颜色标出。
+
+当然，这里有一个问题，对于像这道题这样的数据，如何快速处理，高效的写出表格呢？
+一个简单的方法，就是对其标上序号，然后先使用序号进行整理，
+接着再把句子或句子的一部分抄写下来进行分析。
+
+一些有可能成为分化条件的特征，比如代表现在时和将来时的词缀，可以提前整理出来，
+抄写句子的时候，是用别的颜色将其标出。
+
+\subsection{举例}
+
+To be finished.

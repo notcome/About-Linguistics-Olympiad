@@ -1,0 +1,170 @@
+\section{第四题}
+
+\def \oldman {老汉}
+\def \man {男人}
+\def \young {青年}
+\def \child {儿童}
+\def \woman {女人}
+\def \girl {姑娘}
+\def \thief {小偷}
+\def \pig {猪}
+
+\def \frighten {吓到}
+\def \resemble {长得像}
+\def \kill {杀}
+\def \heal {治好}
+
+\def \deceived {受骗}
+\def \beaten {挨了打}
+\def \evil {邪恶}
+\def \coughing {咳嗽}
+
+\def \null {null}
+\newcommand \refer [2]{#1$_{\mbox{\tiny{#2}}}$}
+\newcommand \getGender [1]{\ifx#1\woman 她\else\ifx#1\girl 她\else 他\fi\fi}
+\newcommand \getPastTense [1]{\ifx#1\resemble 长 (过去时) 得像\else #1了\fi}
+\newcommand \getFutureTense [1]{会 (将来时) #1}
+\newcommand \notPastTense [1]{\ifx#1\resemble 长 (过去时) 得不像\else 没有#1\fi}
+\newcommand \notFutureTense [1]{不会 (将来时) #1}
+\newcommand \verbGen [2]{\ifcase #1\or \getPastTense{#2}\or 
+\getFutureTense{#2}\or \notPastTense{#2}\or \notFutureTense{#2}\fi}
+\newcommand \getPeople [3]{\ifx#2\null [这]\else 这一个\fi\ifx#3\null \else #3的\fi#1}
+\newcommand \genHans [8]{\getPeople{#1}{#2}{#3}\verbGen{#4}{#6}#7吗?\\
+\ifx#8\null \getPeople{#1}{#2}{#3}\else #8\fi
+说\refer{\getGender{#1}}{\getPeople{#1}{#2}{#3}}\verbGen{#5}{#6}#7.}
+
+\newcommand \didial [3]{\bipa{#1?} \bipa{#2.}\\#3}
+
+以下为恩盖尼语的几段短篇对话及其汉语翻译:
+
+\newcounter {exx}[section]
+\newcounter {savexx}
+
+\begin{enumerate}\setlength{\itemsep}{1pt}
+\item \didial {edèì âno nw\d{á}sesè ozyí l\d{e}lemù à}
+{edèì ânò wei ga òkí nw\d asese ozyí l\d{e}lemù}
+{\genHans{\man}{this}{\null}{2}{4}{\frighten}{[这]受骗的小偷}{\null}}
+
+\item \didial {\d{a}vùràmù k\d{i}nono amemùrè ânò à}
+{\d{a}vùràmù wei ga òkì k\d{i}nono amemùrè ânò}
+{\genHans{\woman}{\null}{\null}{1}{1}{\resemble}{这一个姑娘}{\null}}
+
+\item \didial {\d{a}mó l\d{e}lemù \d{â}nó wuese \d{a}vùràmù à}
+{\d{a}modhyòmù wei ga ò wuese \d{a}vùràmù}
+{\genHans{\child}{this}{\deceived}{3}{1}{\kill}{[这]女人}{[这]青年}}
+
+\item \didial {edèí dhia gbúnonò \d{a}mò à}
+{\d{a}vùràmú kofilomù wei ga o gbúnonò \d{a}mò}
+{\genHans{\man}{\null}{\evil}{2}{2}{\heal}{[这]儿童}{[这]咳嗽的女人}}
+
+\item \didial {amemùré dhiá k\d{i}nono opilopo ânò à}
+{\d{a}vùràmù wei ga \d{ó} k\d{i}nono opilopo ânò}
+{\genHans{\girl}{\null}{\evil}{3}{3}{\resemble}{这一头猪}{[这]女人}}
+
+\item \didial {ozyì gbunono okàá n\d{u}amù \d{â}nò à}
+{ozyì wei ga òkí gbunono okàá n\d{u}amù \d{â}nò}
+{\genHans{\thief}{\null}{\null}{1}{3}{\heal}{这一个挨了打的老汉}{\null}}
+
+\item \didial {ozyi âno k\d{í}nonò edèí kofilomù à}
+{\d{a}mò \d{â}nò wei ga \d{ó} k\d{i}nono edèí kofilomù}
+\genHans{\thief}{this}{\null}{2}{4}{\resemble}{[这]咳嗽的男人}{这一个儿童}
+
+\setcounter{exx}{\value{enumi}}\setcounter{savexx}{\value{enumi}}
+\end{enumerate}
+%
+\begin{assgts}
+\item 翻译成汉语:
+
+\begin{enumerate}\setcounter{enumii}{\value{exx}}
+\item \bipa{edèì ânò nw\d asese ozyi à?} \bipa{amemùrè wei ga \d{ò} nw\d asese ozyi.}
+\item \bipa{amemùré l\d{e}lemu dhúnenè \d{a}modhyòmù \d{â}nò à?}\\
+\bipa{amemùré l\d{e}lemu wei ga òki dhúnenè \d{a}modhyòmù \d{â}nò.}
+\setcounter{exx}{\value{enumii}}
+\end{enumerate}
+
+这里还有恩盖尼语的一个答句, 但相应的问句没有给出:
+
+\begin{enumerate}\setcounter{enumii}{\value{exx}}
+\item \bipa{ozyi ânò wei ga \d{a}mó gbunono edèì.}
+\setcounter{exx}{\value{enumii}}
+\end{enumerate}
+
+翻译成汉语. 如果译法不止一种, 请全部写出, 并解释你这样翻译的理由.
+
+\item 翻译成恩盖尼语:
+
+\begin{enumerate}\setcounter{enumii}{\value{exx}}
+\item \genHans{\man}{\null}{\evil}{2}{2}{\heal}{[这]儿童}{[这]咳嗽的女人}{这一个咳嗽的青年}{[这]儿童}
+\item \genHans{\woman}{this}{\beaten}{3}{3}{\frighten}{[这]男人}{\null}
+\end{enumerate}
+
+\item 假设你要编写一部恩盖尼词典, 那么表示 ‘小偷’ 和 ‘姑娘’ 的词的基本形式分别是什么? 解释你的答案.
+\end{assgts}
+
+恩盖尼语属于贝努埃-刚果语系。 在尼日利亚，只剩下二万人使用该语言。一个词的首个元音下面的标记 . 表明该词的所有元音发音时舌位都要稍微降低。标记 ˊ，ˋ, ˆ 分别表示高、低、降调；
+如果以上标记均不出现，这个音节就发中调。
+
+本题作者是阿尔图尔·谢梅纽克斯，他是 IOL 2012 第一题的作者。这题的排版怪坑的——把注释放在第二页。
+赛前我校对过此题，知道音调标记，但没有注意到舌位降低的标记。影子赛中，我就直接把小点给无视了……
+
+除了这个点，我感觉这题还是很简单的——我在填那份没人阅览的问卷调查的时候，最简单的题目选的就是它。
+
+\subsection{推理过程}
+
+事先声明，对于会发生变化的音调符号，独立于语境的引用，均省略音调符号，这不代表中调。
+
+不知道这篇随笔的读者有没有新手。对于这种题，第一步做法永远是标出相同的名词或者动词。举个例子，
+第二句和第三句都出现了\sq{\woman}，也都出现了 \word{\d{a}vùràmù}，因此，这个词极有可能是\sq{\woman}。
+词可能会受时态、单复数等的影响，发生形态变化，因此，长得接近的词，比如说 \word{edèì} 和
+ \word{edèí} 也极有可能是一个词。需要注意的是，当词或词缀很短的时候，这样的归类应当谨慎，
+比如说今年第一题，一个辅音的变化就能表示不同的动词。
+
+简单的分析可以发现，语序是 \textsf{SVO}，问句句尾有 \word{à}。答句中，\word{wei ga} 表示\sq{说}，
+它的前面是说话人，后面跟着从句的主语——似乎是个代词，因为只有两种：\word{o} 和 \word{òki}。
+
+对于名词，修饰语跟在名词的后面。\word{âno} 代表\sq{这一个}。
+
+讨论一下 \word{o} 和 \word{òki}。这两个词作从句的主语，应当反应出从句主语的部分性质。简单归类可以发现，
+\word{o} 表示说话者和从句主语一致，\word{òki} 表示不一致。第一小题的数据进一步验证了我们的猜想。
+
+那么，如何表示时态与否定呢？我们已经确定，没有独立的单词表示否定或者时态。
+\word{o} 和 \word{òki} 变化比较多，可能与之有关。列表：
+
+\begin{tabular}{l|l|l}
+\hline
+\multirow{2}{*}{否定}
+ & 过去 & 5. \word{ó}; 6. \word{òkí} \\ \cline{2-3}
+ & 将来 & 7. \word{ó}; 1. \word{òkí} \\ \hline
+\multirow{2}{*}{肯定}
+ & 过去 & 3. \word{ò}; 2. \word{òkì} \\ \cline{2-3}
+ & 将来 & 4. \word{o} \\ \hline
+\end{tabular}
+
+即，否定式，前词或主语（尚无法确定），末位元音高调，肯定过去时低调，肯定将来时中调。
+
+我们同时可以注意到，每一句的动词在问句和答句中可能也会有变化。简单的前后对比可以发现，
+在肯定将来时的情况下，动词的音调模式为：\textsf{[\refer{V}{1}-\refer{V}{2}-\refer{V}{3}]→
+[\refer{V́}{1}-\refer{V}{2}-\refer{V̀}{3}]}，其余情况，动词所有音节均为中调。
+
+\word{wei ga} 这两个词至少有一个表示动作\sq{说}，但是两词均为中调，考虑到动作本身非否定，
+我们可以推断，答句的主句也受同样的规则影响。我们发现，只有 \word{wei ga} 前的那一个单词，
+可能是主语名词，也可能是名词修饰语，才会变调——比如说第四句的主语 \word{\d{a}vùràmú}，
+音调为高调，与肯定过去时不一致。
+
+即动词只会让其前面的一个单词变调。
+
+可以看出，恩盖尼语的变调相对复杂，这就给我们构建名词的原始形式造成了一定的困难——
+这也是第三小题存在的意义。根据目前的推理，我们发现，宾语或者不与动词直接接触的主语均为原始形式。
+然而，我们很快就发现了一个矛盾之处，第一句与第四句的主语 \word{edèi}，音调不一致。
+我们还可以发现第三句的宾语和第四句答句的主语 \word{\d{a}vùràmu}，音调不一致。
+
+这个时候就有两种观点，\word{à} 和 \word{âno} 让名词末位元音变成低调，
+或名词后的形容词让名词末位元音变成高调。第一小题的第八句否决了前一猜想：
+\word{à} 前的 \word{ozyi} 是中调。因此，形容词会导致名词变调。
+
+最后，不要忘了舌位降低。我们发现，大部分舌位降低的词不存在未降低形式——我们可以假定舌位降低是这些词的自带属性——
+但是 \word{o} 和 \word{ânò} 存在两种形式。分化条件相对简单，如果 \word{o} 后的动词舌位降低，
+\word{o} 也会舌位降低；配合第六句，我们可以确定，\word{ânò} 前的词（不一定是修饰的名词）若舌位降低，
+\word{ânò} 也会舌位降低。
+
+至此，所有的点已被解决。
