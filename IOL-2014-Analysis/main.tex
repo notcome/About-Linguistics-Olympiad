@@ -13,38 +13,41 @@
 
 \xeCJKDeclareSubCJKBlock{glottalStop}{`’}
 \normalspacedchars{‘’“”?*}
-\setmainfont[
+\newfontfamily \ipafont[
   BoldFont=CMUSerif-Bold,
   ItalicFont=CMUSerif-Italic,
   BoldItalicFont=CMUSerif-BoldItalic
 ]{CMUSerif-Roman}
-\setsansfont[BoldFont=CMUSansSerif-Bold]{CMUSansSerif}
-\setCJKmainfont[
+\setsansfont{Helvetica Neue}
+\setCJKsansfont[
   glottalStop=CMUSerif-BoldItalic,
-  BoldFont={Songti SC Black},
+  BoldFont={Hiragino Sans GB W6},
   ItalicFont={Kaiti SC Regular},
   BoldItalicFont={Kaiti SC Black}
-]{Songti SC Regular}
+]{Hiragino Sans GB W3}
 \newfontfamily \symfont{STIXGeneral-Regular}
+\newCJKfontfamily \LantingDB{Lantinghei GBK Demibold}
+
+\renewcommand{\familydefault}{\sfdefault}
 
 \xeCJKsetup{CJKecglue={\hskip 0.1em}}
 \xeCJKsetwidth {·}{0.5em}
 
-\renewcommand{\thesection}{}
-\renewcommand{\thesubsection}{}
-\renewcommand{\thesubsubsection}{}
 \makeatletter
-\def\@seccntformat#1{\csname #1ignore\expandafter\endcsname\csname the#1\endcsname\quad}
-\let\sectionignore\@gobbletwo
-\let\latex@numberline\numberline
-\def\numberline#1{\if\relax#1\relax\else\latex@numberline{#1}\fi}
+\renewcommand \section
+{\@startsection{section}{1}{\z@}{-3ex}{1.5ex}{\LARGE\LantingDB}}
+\renewcommand \subsection
+{\@startsection{subsection}{2}{\z@}{-2ex}{1ex}{\Large\LantingDB}}
+\renewcommand \subsubsection
+{\@startsection{subsubsection}{3}{\z@}{-2ex}{1ex}{\large\LantingDB}}
+\def\@seccntformat#1{}
 \makeatother
 
 \newcommand \sq [1]{「#1」}
 \newcommand \dq [1]{『#1』}
 \newcommand \bookref [1]{《#1》}
-\newcommand \word [1]{\textbf{#1}}
-\newcommand \bipa [1]{\textbf{#1}}
+\newcommand \word [1]{\bgroup\ipafont\textbf{#1}\egroup}
+\newcommand \bipa [1]{\word{#1}}
 \newcommand \westname [1]{\textit{#1}}
 \newcommand \hla [1]{\textcolor{red}{#1}}
 \newcommand \hlb [1]{\textcolor{blue}{#1}}
