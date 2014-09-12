@@ -164,12 +164,12 @@
   Shape=circle,
   FillColor=white,
   LineWidth=1pt]
-\tikzset{VertexStyle/.append style={font=\bfseries}}
+\tikzset{VertexStyle/.append style={font=\bfseries\ipafont}}
 \SetUpEdge[
   lw=1pt,
   color=black,
   labelcolor=white,
-  labelstyle={font=\bfseries}]
+  labelstyle={font=\bfseries\ipafont}]
 \begin{center}
 \begin{tikzpicture}
   \Vertex[x=3, y=9]{Sm}
@@ -244,7 +244,7 @@
 
 稍作观察即可发现，描述同一组内亲属关系的共有四个词，分别是 \word{\tamBr}、\word{\tamSi}、
 \word{\tafBr} 和 \word{\tafSi}。考虑到在 “A 是 B 的 X” 这样的表述中，
-根据 “A” 和 “B” 性别不同，总共有四种可能，可以确定，这四个词对 “A” 与 “B” 的性别均有要求。
+根据 A 和 B 性别不同，总共有四种可能，可以确定，这四个词对 A 与 B 的性别均有要求。
 由于 \word{\tamBr} 用于两位男性之间，类似汉语中的关系\sq{兄弟}，我们可以确定子辈八人的性别，并推出下表：
 
 \begin{tabular}{c|c|l}

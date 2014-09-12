@@ -18,6 +18,7 @@
   ItalicFont=CMUSerif-Italic,
   BoldItalicFont=CMUSerif-BoldItalic
 ]{CMUSerif-Roman}
+\newfontfamily \glossfont{CMU Sans Serif}
 \setsansfont{Helvetica Neue}
 \setCJKsansfont[
   glottalStop=CMUSerif-BoldItalic,
@@ -80,57 +81,11 @@ IOL 2014 刚刚结束。本届比赛中国队取得了巨大的突破，乐观�
 一个人也能在五个小时内完成基本任务。组委会特地在比赛过程中通知各国队伍，写下规则，
 而这在往届比赛中是不需要的。
 
-\section{试题的制作与翻译}
-
-众所周知，IOL 试题使用 \LaTeX 书写\cite{IOLEdit}，而 \LaTeX 设计之初，
-便没有考虑到对诸如 CJK (Chinese, Japanese \& Korean) 这样大字符集的支持，
-只允许使用八位字符来表示文本。处理 CJK 文档时，\LaTeX 将临时构造多个字体，
-将 CJK 字符集分割并映射到这些字体上，再分别给文档的不同内容应用不同的字体。
-这种解决方案有许多缺点，最基本的一条，便是你无法从输出的文档中拷贝内容，
-因为汉字\sq{下}在文件中的实际值的 ASCII 编码可能为 65，即字母 “A”。IOL 2009
-的韩文试题便是一个典型例子。另一个例子是，你从过去 IOL 试题文件中拷贝出来的特殊字符都会发生\sq{形态变化}。
-
-为解决 \LaTeX 的 CJK 兼容性问题，以及了解中文版 IOL 试题可能遇到的翻译问题，
-我联系了戴谊凡 (\westname{Ivan Derzhanski}) 先生，并开始了翻译过去试题的计划。随后，
-曹起曈加入了本计划，对排版提了些许建议，并在文本翻译方面作出了许多贡献。
-虽然由于人手不足，第六届试题尚未完成初稿，翻译仍需进一步的复审和改进，
-但本项目已为本届 IOL 的中日文试题的制作扫清了技术障碍。关于技术细节，
-可以参考翻译项目在 \href{https://github.com/notcome/IOL.cn}{GitHub} 上的源代码。
-
-而在翻译上，主要的问题是存在许多小错误，比如说：
-
-\begin{enumerate}
-\item 个人赛第四题的初稿里使用了\sq{女人长得像这个姑娘吗?}，但同样的句子在英文翻译中体现了过去时。
-
-\item 个人赛第五题，动词\sq{放}存在歧义，是\sq{放置}还是\sq{放过}。
-
-\item 团体赛，\bookref{世界人权宣言}，将英文中的 “national origin” 和 “nationality” 均翻译成国籍。
-\end{enumerate}
-
-在继续讨论之前，我需要提及一下，为确保公正，组委会会把试题中出现的每一句话，
-无论是题干还是语言材料的翻译，都分割成基本单位，词组或完整的句子，
-分别翻译至各工作语言并制成表格，再一一对比，避免某个语言的翻译提供了过多或过少的信息\cite{IOLEdit}。
-
-这三个小问题，给了我们三个教训。
-
-其一，翻译人员并没有参与到试题的讨论中去。恩盖尼语实际上不区分过去时和现在时，作者为了简化题目，
-才让英文翻译体现出过去时。而在西班牙语翻译则体现了两种不同时态，但组委会认为这两种时态共性明显，
-不妨碍选手将其归为一类。很显然，负责汉语翻译的王伟先生是在后期才加入翻译工作，对这个决定并不知情。
-
-其二，翻译的歧义需要仔细检查，尤其是语义题的翻译。
-
-其三，对于一切文本都尽量使用表格来检查。在闭幕式后我询问了戴谊凡先生，他们直接拷贝了官方翻译，
-并未进行任何检查。结合他们在开幕式前两天，即十九日，才完成中文试题，我相信他们一定遇到了时间不足的问题。
-立志进入命题委员会的同学们，可以现在就去写\href{mailto:pc-chair@ioling.org}{邮件}。
-
+\input{IOLEdit}
 \input{Problem1}
-
 \input{Problem2}
-
 \input{Problem3}
-
 \input{Problem4}
-
 \input{Problem5}
 
 \renewcommand \refname{引用}

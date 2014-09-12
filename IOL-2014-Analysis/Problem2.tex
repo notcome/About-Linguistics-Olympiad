@@ -1,4 +1,7 @@
-\newcommand \allshade {\cellcolor[gray]{.8}}
+\newcommand \notapp {\cellcolor[gray]{.8}}
+\newcommand \unknown {\bgroup\ipafont?\egroup}
+
+\newcommand \suffix [1]{\bipa{-#1}}
 
 \section{第二题}
 
@@ -8,24 +11,24 @@
 \bipa{matʰɔnsjan} & \bipa{matʰɔnsjan} & \bipa{matʰɔnsjadɔ} & 小女孩 \\ \hline
 \bipa{k’ɔ} & \bipa{k’ɔ} & \bipa{k’ɔgɔ} & 刀 \\ \hline
 \bipa{tʰot’olagɔ} & \bipa{tʰot’ola} & \bipa{tʰot’olagɔ} & 橙子 \\ \hline
-\bipa{aufi} & \allshade & \bipa{aufigɔ} & 鱼 \\ \hline
-\bipa{pʰjaboadɔ} & \allshade & \bipa{pʰjaboa} & 路灯 \\ \hline
-\bipa{matʰɔn} & \allshade & \bipa{matʰɔdɔ} & 姑娘 \\ \hline
-\bipa{k’ɔnbohodɔ } & \allshade & \bipa{k’ɔnbohon} & 帽子 \\ \hline
-\bipa{t’ɔ} & \allshade & \bipa{t’ɔgɔ} & 勺子 \\ \hline
-\allshade & \allshade & \bipa{e} & 面包 \\ \hline
-\bipa{alɔsɔhjegɔ} & ? & \bipa{alɔsɔhjegɔ} & 李 \\ \hline
-? & \bipa{tsegun} & \bipa{tsegudɔ} & 狗 \\ \hline
-\bipa{alɔguk’ogɔ} & \bipa{alɔguk’o} & ? & 柠檬 \\ \hline
-? & \bipa{k’apʰtʰɔ} & \bipa{k’apʰtʰɔgɔ} & 老汉 \\ \hline
-\bipa{kʰɔdɔ} & \bipa{kʰɔ} & ? & 被子 \\ \hline
-\bipa{k’ɔdɔ} & ? & \bipa{k’ɔdɔ} & 西红柿 \\ \hline
-? & \bipa{alɔ} & ? & 苹果 \\ \hline
-? & \bipa{pʰɔ} & ? & 野牛 \\ \hline
-? & ? & \bipa{sadɔ} & 儿童 \\ \hline
-\bipa{ɔlsun} & ? & ? & 梳子 \\ \hline
-? & \bipa{pitso} & ? & 叉子 \\ \hline
-? & \bipa{tʰɔpʰpaa} & ? & 椅子 \\ \hline
+\bipa{aufi} & \notapp & \bipa{aufigɔ} & 鱼 \\ \hline
+\bipa{pʰjaboadɔ} & \notapp & \bipa{pʰjaboa} & 路灯 \\ \hline
+\bipa{matʰɔn} & \notapp & \bipa{matʰɔdɔ} & 姑娘 \\ \hline
+\bipa{k’ɔnbohodɔ } & \notapp & \bipa{k’ɔnbohon} & 帽子 \\ \hline
+\bipa{t’ɔ} & \notapp & \bipa{t’ɔgɔ} & 勺子 \\ \hline
+\notapp & \notapp & \bipa{e} & 面包 \\ \hline
+\bipa{alɔsɔhjegɔ} & \unknown & \bipa{alɔsɔhjegɔ} & 李 \\ \hline
+\unknown & \bipa{tsegun} & \bipa{tsegudɔ} & 狗 \\ \hline
+\bipa{alɔguk’ogɔ} & \bipa{alɔguk’o} & \unknown & 柠檬 \\ \hline
+\unknown & \bipa{k’apʰtʰɔ} & \bipa{k’apʰtʰɔgɔ} & 老汉 \\ \hline
+\bipa{kʰɔdɔ} & \bipa{kʰɔ} & \unknown & 被子 \\ \hline
+\bipa{k’ɔdɔ} & \unknown & \bipa{k’ɔdɔ} & 西红柿 \\ \hline
+\unknown & \bipa{alɔ} & \unknown & 苹果 \\ \hline
+\unknown & \bipa{pʰɔ} & \unknown & 野牛 \\ \hline
+\unknown & \unknown & \bipa{sadɔ} & 儿童 \\ \hline
+\bipa{ɔlsun} & \unknown & \unknown & 梳子 \\ \hline
+\unknown & \bipa{pitso} & \unknown & 叉子 \\ \hline
+\unknown & \bipa{tʰɔpʰpaa} & \unknown & 椅子 \\ \hline
 \end{tabular}
 
 上表为一些基奥瓦语名词的单双复数形式及其汉语翻译。表中名词均有三种形式，
@@ -53,7 +56,7 @@
 
 或许他们会在名词的前面加上数词，但我想，名词的形态变化，必然会反映了基奥瓦语母语者大脑里的某些想法。
 
-你觉得最初说基奥瓦语的那个部落的人，会因为一个单词以 “\word{-n}” 结尾，就改变对其的看法吗？
+你觉得最初说基奥瓦语的那个部落的人，会因为一个单词以 “\suffix{n}” 结尾，就改变对其的看法吗？
 
 这道题的规律与名词的语义有关，便是一个很自然的推论。那就分个类吧：
 
@@ -62,33 +65,33 @@
 \multicolumn{3}{l}{单数形式变化} \\
 \hline
 基态 & 变化 & 翻译 \\ \hline
-\bipa{a} & -\bipa{dɔ} & 树 \\ \hline
-\bipa{pʰjaboa} & -\bipa{dɔ} & 路灯 \\ \hline
-\bipa{kʰɔ} & -\bipa{dɔ} & 被子 \\ \hline
-\bipa{k’ɔnboho\highlight{n}} & -\bipa{dɔ} & 帽子 \\ \hline
-\bipa{e} & \allshade & 面包 \\ \hline
+\bipa{a} & \suffix{dɔ} & 树 \\ \hline
+\bipa{pʰjaboa} & \suffix{dɔ} & 路灯 \\ \hline
+\bipa{kʰɔ} & \suffix{dɔ} & 被子 \\ \hline
+\bipa{k’ɔnboho\highlight{n}} & \suffix{dɔ} & 帽子 \\ \hline
+\bipa{e} & \notapp & 面包 \\ \hline
 \end{tabular}
 \begin{tabular}[t]{l|c|c}
 \hline
 \multicolumn{3}{l}{复数形式变化} \\
 \hline
 基态 & 变化 & 翻译 \\ \hline
-\bipa{k’ɔ} & -\bipa{gɔ} & 刀 \\ \hline
-\bipa{aufi} & -\bipa{gɔ} & 鱼 \\ \hline
-\bipa{t’ɔ} & -\bipa{gɔ} & 勺子 \\ \hline
-\bipa{matʰɔ\highlight{n}} & -\bipa{dɔ} & 姑娘 \\ \hline
-\bipa{matʰɔnsja\highlight{n}} & -\bipa{dɔ} & 小女孩 \\ \hline
-\bipa{ɔlsun} & ? & 梳子 \\ \hline
+\bipa{k’ɔ} & \suffix{gɔ} & 刀 \\ \hline
+\bipa{aufi} & \suffix{gɔ} & 鱼 \\ \hline
+\bipa{t’ɔ} & \suffix{gɔ} & 勺子 \\ \hline
+\bipa{matʰɔ\highlight{n}} & \suffix{dɔ} & 姑娘 \\ \hline
+\bipa{matʰɔnsja\highlight{n}} & \suffix{dɔ} & 小女孩 \\ \hline
+\bipa{ɔlsun} & \unknown & 梳子 \\ \hline
 \end{tabular}
 \begin{tabular}[t]{l|c|c}
 \hline
 \multicolumn{3}{l}{单复数形式均变化} \\
 \hline
 基态 & 变化 & 翻译 \\ \hline
-\bipa{tʰot’ola} & -\bipa{gɔ} & 橙子 \\ \hline
-\bipa{alɔsɔhjegɔ} & -\bipa{gɔ} & 李子 \\ \hline
-\bipa{alɔguk’ogɔ} & -\bipa{gɔ} & 柠檬 \\ \hline
-? & -\bipa{dɔ} & 西红柿 \\ \hline
+\bipa{tʰot’ola} & \suffix{gɔ} & 橙子 \\ \hline
+\bipa{alɔsɔhjegɔ} & \suffix{gɔ} & 李子 \\ \hline
+\bipa{alɔguk’ogɔ} & \suffix{gɔ} & 柠檬 \\ \hline
+\unknown & \suffix{dɔ} & 西红柿 \\ \hline
 \end{tabular}
 
 红色部分表示发生形态变化后该部分被移除。
@@ -101,12 +104,12 @@
 比如说\sq{路灯}或者\sq{帽子}，很有可能在原来这个语言中不存在，后来和欧洲侵略者交流之后，
 才传进这门语言中。当然，这种看法未必正确。
 
-再说音韵变化。可以清楚的发现，如果单词以 “\word{-n}” 结尾，“\word{-n}” 总是被去掉，
-或者说变成 “\word{-d}”，再加上 “\word{-ɔ}”。虽然没有直接给出在单复数形式均变化时，
-以 “\word{-n}” 结尾的单词的变化形式，但我相信这里会有同样的规则。
+再说音韵变化。可以清楚的发现，如果单词以 “\suffix{n}” 结尾，“\suffix{n}” 总是被去掉，
+或者说变成 “\suffix{d}”，再加上 “\suffix{ɔ}”。虽然没有直接给出在单复数形式均变化时，
+以 “\suffix{n}” 结尾的单词的变化形式，但我相信这里会有同样的规则。
 
-然而，虽然大部分情况下元音结尾的单词都直接获得词缀 “\word{-gɔ}”，但是如果单词属于第一分类，
-只有单数形式变化，即使单词以元音结尾，也会获得词缀 “\word{-dɔ}”。这条规律也很容易观察。
+然而，虽然大部分情况下元音结尾的单词都直接获得词缀 “\suffix{gɔ}”，但是如果单词属于第一分类，
+只有单数形式变化，即使单词以元音结尾，也会获得词缀 “\suffix{dɔ}”。这条规律也很容易观察。
 
 总的来说，这道题还是极为简单的。
 
